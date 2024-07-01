@@ -1,0 +1,21 @@
+.AddForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.AddForm input,
+label {
+  width: 150px;
+}
+.AddForm input {
+  margin-bottom: 20px;
+}
+
+.AddForm label {
+  margin-bottom: 10px;
+}

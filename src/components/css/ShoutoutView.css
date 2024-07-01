@@ -1,0 +1,25 @@
+.ShoutoutView {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.ShoutoutView #shoutout-to {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ShoutoutView #shoutout-from {
+  color: grey;
+}
+
+.ShoutoutView #shoutout-text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.ShoutoutView img {
+  width: 50px;
+}
