@@ -22,7 +22,7 @@ const AddForm = ({ onAdd, toName }: Props) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   // sync with form
   const formRef = useRef<HTMLFormElement>(null);
-  const [fbPhotoUrl, setFbPhotoUrl] = useState("");
+  // const [fbPhotoUrl, setFbPhotoUrl] = useState("");
 
   // submit form
   const submitHandler = (e: FormEvent) => {

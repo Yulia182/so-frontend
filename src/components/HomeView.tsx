@@ -5,8 +5,6 @@ import {
   addNewShoutout,
   deleteShoutoutById,
   getAllShoutouts,
-  getShoutoutById,
-  updateShoutoutById,
 } from "../services/shoutoutApiService";
 import Shoutout from "../model/Shoutout";
 import { useParams } from "react-router-dom";
@@ -29,11 +27,11 @@ const HomeView = () => {
     });
   };
 
-  const getSingleShoutout = (id: string): void => {
-    getShoutoutById(id).then((res) => {
-      res;
-    });
-  };
+  // const getSingleShoutout = (id: string): void => {
+  //   getShoutoutById(id).then((res) => {
+  //     res;
+  //   });
+  // };
 
   const deleteShoutout = (id: string): void => {
     deleteShoutoutById(id).then(() => {
@@ -42,13 +40,13 @@ const HomeView = () => {
     });
   };
 
-  const updateShoutout = (shoutout: Shoutout): void => {
-    updateShoutoutById(shoutout).then((res) => {
-      res;
-      // update UI
-      getAllShoutouts().then((res) => setShoutouts(res));
-    });
-  };
+  // const updateShoutout = (shoutout: Shoutout): void => {
+  //   updateShoutoutById(shoutout).then((res) => {
+  //     res;
+  //     // update UI
+  //     getAllShoutouts().then((res) => setShoutouts(res));
+  //   });
+  // };
   console.log(shoutouts);
   return (
     <div className="HomeView">
